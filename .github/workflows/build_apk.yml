@@ -26,6 +26,9 @@ jobs:
 
       - name: Install Dependencies
         run: flutter pub get
+        # Si tu proyecto está en la raíz, borra la línea de abajo. 
+        # Si está dentro de una subcarpeta, pon el nombre de la carpeta aquí:
+        # working-directory: ./nombre-de-la-carpeta
 
       - name: Build APK Release
         run: flutter build apk --release
